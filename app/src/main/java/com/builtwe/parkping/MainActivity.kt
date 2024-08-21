@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        MapKitFactory.setApiKey("f780eac5-f6a0-43bd-a286-e2cf79536159")
+        MapKitFactory.setApiKey("f780eac5-f6a0-43bd-a286-e2cf79536159") // nuh uh
 
         enableEdgeToEdge()
         setContent {
