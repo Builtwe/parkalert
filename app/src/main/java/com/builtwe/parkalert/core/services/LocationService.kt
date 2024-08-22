@@ -1,4 +1,4 @@
-package com.builtwe.parkalert.core
+package com.builtwe.parkalert.core.services
 
 import android.app.Notification
 import android.app.NotificationChannel

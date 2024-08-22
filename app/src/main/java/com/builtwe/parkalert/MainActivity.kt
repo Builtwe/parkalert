@@ -11,7 +11,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import com.builtwe.parkalert.core.LocationService
+import com.builtwe.parkalert.core.services.LocationService
 import com.builtwe.parkalert.ui.screens.MainScreen
 import com.builtwe.parkalert.ui.theme.ParkpingTheme
 import com.yandex.mapkit.MapKitFactory

@@ -12,6 +12,6 @@ class LocationViewModel : ViewModel() {
 
     fun updateLocation(locationResult: LocationResult) {
         _locationData.value = locationResult
-        Log.d("Parkalert", "Location (from VM): ${locationResult.lastLocation?.latitude} ${locationResult.lastLocation?.longitude}")
+        Log.d("Parkalert", "Location received to VM: ${locationResult.lastLocation?.latitude} ${locationResult.lastLocation?.longitude}")
     }
 }

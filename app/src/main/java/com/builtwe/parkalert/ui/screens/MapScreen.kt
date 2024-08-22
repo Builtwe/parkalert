@@ -17,15 +17,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.builtwe.parkalert.core.vms.LocationViewModel
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.mapview.MapView
 
 // https://github.com/yandex/mapkit-android-demo/issues/317#issuecomment-2182595712
 @Composable
-fun MapScreen(locationViewModel: LocationViewModel) {
+fun MapScreen() {
     val context = LocalContext.current
     val mapView = remember { mutableStateOf<MapView?>(null) }
+
+    val locationViewModel: LocationViewModel = viewModel()
     val locationResult by locationViewModel.locationData.collectAsState()
 
     Scaffold(
@@ -45,7 +48,7 @@ fun MapScreen(locationViewModel: LocationViewModel) {
                 mapView.value = it
             }
             Text(
-                text = "Location: ${locationResult?.lastLocation?.latitude} ${locationResult?.lastLocation?.longitude}",
+                text = locationResult?.lastLocation?.latitude.toString(),
                 modifier = Modifier.padding(32.dp)
             )
         }
