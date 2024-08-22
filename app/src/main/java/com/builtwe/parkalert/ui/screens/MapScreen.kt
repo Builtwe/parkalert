@@ -23,10 +23,9 @@ import com.yandex.mapkit.mapview.MapView
 
 // https://github.com/yandex/mapkit-android-demo/issues/317#issuecomment-2182595712
 @Composable
-fun MapScreen() {
+fun MapScreen(locationViewModel: LocationViewModel) {
     val context = LocalContext.current
     val mapView = remember { mutableStateOf<MapView?>(null) }
-    val locationViewModel = LocationViewModel()
     val locationResult by locationViewModel.locationData.collectAsState()
 
     Scaffold(
@@ -46,7 +45,7 @@ fun MapScreen() {
                 mapView.value = it
             }
             Text(
-                text = "Location: ${locationResult?.lastLocation}",
+                text = "Location: ${locationResult?.lastLocation?.latitude} ${locationResult?.lastLocation?.longitude}",
                 modifier = Modifier.padding(32.dp)
             )
         }
