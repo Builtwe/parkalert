@@ -1,4 +1,4 @@
-package com.builtwe.parkping
+package com.builtwe.parkalert
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

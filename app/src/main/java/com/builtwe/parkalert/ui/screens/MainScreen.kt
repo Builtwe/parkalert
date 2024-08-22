@@ -1,4 +1,4 @@
-package com.builtwe.parkping.ui.screens
+package com.builtwe.parkalert.ui.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -14,11 +14,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.builtwe.parkping.R
-import com.builtwe.parkping.ui.navigation.BottomNavItem
-import com.builtwe.parkping.ui.navigation.ParkpingNavBar
-import com.builtwe.parkping.ui.navigation.ParkpingNavHost
-import com.builtwe.parkping.ui.navigation.Screen
+import com.builtwe.parkalert.R
+import com.builtwe.parkalert.ui.navigation.BottomNavItem
+import com.builtwe.parkalert.ui.navigation.ParkpingNavBar
+import com.builtwe.parkalert.ui.navigation.ParkpingNavHost
+import com.builtwe.parkalert.ui.navigation.Screen
 
 @Composable
 fun MainScreen() {

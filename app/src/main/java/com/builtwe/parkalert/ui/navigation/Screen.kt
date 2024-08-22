@@ -1,4 +1,4 @@
-package com.builtwe.parkping.ui.navigation
+package com.builtwe.parkalert.ui.navigation
 
 sealed class Screen(val route: String) {
     data object MainScreen : Screen("main_screen")

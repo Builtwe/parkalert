@@ -1,4 +1,4 @@
-package com.builtwe.parkping.ui.navigation
+package com.builtwe.parkalert.ui.navigation
 
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
@@ -7,10 +7,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.builtwe.parkping.ui.screens.MainScreen
-import com.builtwe.parkping.ui.screens.MapScreen
-import com.builtwe.parkping.ui.screens.ProfileScreen
-import com.builtwe.parkping.ui.screens.SettingsScreen
+import com.builtwe.parkalert.ui.screens.MainScreen
+import com.builtwe.parkalert.ui.screens.MapScreen
+import com.builtwe.parkalert.ui.screens.ProfileScreen
+import com.builtwe.parkalert.ui.screens.SettingsScreen
 
 @Composable
 fun ParkpingNavHost(

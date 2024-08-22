@@ -1,4 +1,4 @@
-package com.builtwe.parkping.ui.navigation
+package com.builtwe.parkalert.ui.navigation
 
 import androidx.annotation.StringRes
 import androidx.compose.ui.graphics.vector.ImageVector

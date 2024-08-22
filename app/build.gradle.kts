@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.builtwe.parkping"
+    namespace = "com.builtwe.parkalert"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.builtwe.parkping"
+        applicationId = "com.builtwe.parkalert"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

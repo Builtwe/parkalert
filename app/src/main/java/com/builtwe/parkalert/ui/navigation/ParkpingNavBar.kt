@@ -1,4 +1,4 @@
-package com.builtwe.parkping.ui.navigation
+package com.builtwe.parkalert.ui.navigation
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar

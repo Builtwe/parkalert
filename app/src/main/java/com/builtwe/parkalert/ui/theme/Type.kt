@@ -1,4 +1,4 @@
-package com.builtwe.parkping.ui.theme
+package com.builtwe.parkalert.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

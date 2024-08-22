@@ -1,4 +1,4 @@
-package com.builtwe.parkping.ui.screens
+package com.builtwe.parkalert.ui.screens
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

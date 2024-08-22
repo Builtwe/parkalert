@@ -1,4 +1,4 @@
-package com.builtwe.parkping
+package com.builtwe.parkalert
 
 import org.junit.Test
 

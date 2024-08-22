@@ -1,11 +1,11 @@
-package com.builtwe.parkping
+package com.builtwe.parkalert
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.builtwe.parkping.ui.screens.MainScreen
-import com.builtwe.parkping.ui.theme.ParkpingTheme
+import com.builtwe.parkalert.ui.screens.MainScreen
+import com.builtwe.parkalert.ui.theme.ParkpingTheme
 import com.yandex.mapkit.MapKitFactory
 
 class MainActivity : ComponentActivity() {
