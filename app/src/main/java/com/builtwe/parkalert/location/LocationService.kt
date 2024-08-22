@@ -1,4 +1,4 @@
-package com.builtwe.parkalert.core.services
+package com.builtwe.parkalert.location
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -12,7 +12,8 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.lifecycle.ViewModelProvider
 import com.builtwe.parkalert.R
-import com.builtwe.parkalert.core.vms.LocationViewModel
+import com.builtwe.parkalert.location.LocationDataHolder.updateLocation
+import com.builtwe.parkalert.utils.SecretData.TAG
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
@@ -29,16 +30,11 @@ class LocationService : Service() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var locationCallback: LocationCallback
 
-    private lateinit var locationViewModel: LocationViewModel
-
     private val INTERVAL: Long = 10000 // 10 seconds
     private val FASTEST_INTERVAL: Long = 5000 // 5 seconds
 
     override fun onCreate() {
         super.onCreate()
-
-        locationViewModel = ViewModelProvider.AndroidViewModelFactory.getInstance(application)
-            .create(LocationViewModel::class.java)
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
@@ -55,8 +51,11 @@ class LocationService : Service() {
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {
                 locationResult.lastLocation?.let { location ->
-                    Log.d("Parkalert", "Location: ${location.latitude}, ${location.longitude}")
-                    locationViewModel.updateLocation(locationResult)
+                    updateLocation(locationResult)
+                    Log.d(
+                        TAG,
+                        "Location: ${location.latitude}, ${location.longitude}"
+                    )
                 }
             }
         }

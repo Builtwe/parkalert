@@ -11,9 +11,10 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import com.builtwe.parkalert.core.services.LocationService
+import com.builtwe.parkalert.location.LocationService
 import com.builtwe.parkalert.ui.screens.MainScreen
 import com.builtwe.parkalert.ui.theme.ParkpingTheme
+import com.builtwe.parkalert.utils.SecretData.MAPKIT_API_KEY
 import com.yandex.mapkit.MapKitFactory
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        MapKitFactory.setApiKey("f780eac5-f6a0-43bd-a286-e2cf79536159") // nuh uh
+        MapKitFactory.setApiKey(MAPKIT_API_KEY)
 
         if (checkLocationPermissions()) {
             startLocationService()

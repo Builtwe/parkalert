@@ -112,3 +112,4 @@ deploymentTargetDropDown.xml
 render.experimental.xml
 google-services.json
 *.hprof
+app/src/main/java/com/builtwe/parkalert/utils/SecretData.kt

@@ -7,7 +7,6 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.builtwe.parkalert.core.vms.LocationViewModel
 import com.builtwe.parkalert.ui.screens.MainScreen
 import com.builtwe.parkalert.ui.screens.MapScreen
 import com.builtwe.parkalert.ui.screens.ProfileScreen
