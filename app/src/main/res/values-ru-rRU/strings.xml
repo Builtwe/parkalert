@@ -4,4 +4,5 @@
     <string name="profile">Профиль</string>
     <string name="settings">Настройки</string>
     <string name="notification_text">Ваша локация отслеживается</string>
+    <string name="main_info">Основная информация</string>
 </resources>

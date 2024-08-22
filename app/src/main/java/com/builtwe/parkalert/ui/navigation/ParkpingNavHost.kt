@@ -11,6 +11,7 @@ import com.builtwe.parkalert.ui.screens.MainScreen
 import com.builtwe.parkalert.ui.screens.MapScreen
 import com.builtwe.parkalert.ui.screens.ProfileScreen
 import com.builtwe.parkalert.ui.screens.SettingsScreen
+import com.builtwe.parkalert.ui.screens.SignUpScreen
 
 @Composable
 fun ParkpingNavHost(
@@ -35,6 +36,9 @@ fun ParkpingNavHost(
         }
         composable(Screen.SettingsScreen.route) {
             SettingsScreen()
+        }
+        composable(Screen.SignUpScreen.route) {
+            SignUpScreen(navController)
         }
     }
 }
